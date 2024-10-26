@@ -1,6 +1,6 @@
-const express = requiere('express');
+const express = require('express');
 const bodyParser = require('body-parser')
-const productoRoutes = requiere('./routes/productsRoutes')
+const productoRoutes = require('./routes/productsRoutes')
 
 const app = express();
 const PORT = 3000
@@ -15,5 +15,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`servidor escuchando en http://localhost${POST}`);
+    console.log(`servidor escuchando en http://localhost${PORT}`);
 });
